@@ -1,0 +1,56 @@
+﻿<div class="jumbotron">
+    <h3>Pearson</h3>
+    <p class="lead">Web API task </p>
+    
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <h2>Students Controller</h2>
+        <ul>
+            <li>HTTPGET - http://localhost:61890/api/v1/Students </li>
+            <li>HTTPGET - http://localhost:61890/api/v1/Students/11 </li>
+            <li>HTTPPOST - http://localhost:61890/api/v1/Students/ 
+            <p> sample payload object {
+  "Name": "John",
+  "Department": "CSE",
+  "Age": 22,
+  "Email":"john@test.com"
+}</p>
+            </li>
+
+            <li>HTTPPUT - http://localhost:61890/api/v1/Students/ 
+            <p> Sample payload {
+  "StudentId": 1,
+  "Name": "Sarvan",
+  "Department": "CSE-IT",
+  "Age": 26,
+  "Email": "ssarvan@test.com"
+}</p>
+            </li>
+            <li> HTTPDELETE- http://localhost:61890/api/v1/Students/3 
+            
+            <</li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h2>Marks Controller</h2>
+        <ul>
+            <li>HTTPGET -http://localhost:61890/api/v1/Marks </li>
+            <li>HTTPGET -http://localhost:61890/api/v1/Marks/2</li>
+            <li>HTTPPOST-http://localhost:61890/api/v1/Marks
+            <p>sample payload {
+	"StudentId":1,
+	"Subject":"chemistry",
+	"Score":58
+}</p></li>
+            <li> HTTPPUT- http://localhost:61890/api/v1/Marks
+            <p> sample payload    { "MarkId": 1,
+   "StudentId":2,
+    "Subject": "Mathsism",
+    "Score": 88,
+   }</p></li>
+            <li>HTTPDELETE- http://localhost:61890/api/v1/Marks/1</li>
+        </ul>
+    </div>
+
+</div>
